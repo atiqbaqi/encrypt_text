@@ -1,4 +1,4 @@
-# encrypt_text
+# ENCRYPT PLAIN TEXT
 
 This is an example of symmetric ecryption using nodejs crypto module. Symmetric encryption means the plain text is encrypted using same key. A random initial vector in 
 short IV also used to increase security by introducing additional cryptographic variance. The initialization vector need not be secret. An IV prevents a sequence of plaintext 
