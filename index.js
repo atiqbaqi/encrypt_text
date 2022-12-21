@@ -27,11 +27,11 @@ function encrypt(text){
 }
 
 function decrypt(){
-    var iv = crypto.randomBytes(ivlength);
-    iv = '524cc6bfdfa3e8b525962d563a83c75a';
-    var iv_from_ciphertext = Buffer.from(iv, outputEncoding);
+    //let iv = crypto.randomBytes(ivlength);
+    let iv = '524cc6bfdfa3e8b525962d563a83c75a';
+    var iv_for_ciphertext = Buffer.from(iv, outputEncoding);
     let text = 'd6b8550cbeaf28fcf020ddd442d7648d';
-    var decipher = crypto.createDecipheriv(algorithm, key, iv_from_ciphertext);
+    var decipher = crypto.createDecipheriv(algorithm, key, iv_for_ciphertext);
     var deciphered = decipher.update(text, outputEncoding, inputEncoding);
     deciphered += decipher.final(inputEncoding);
 
