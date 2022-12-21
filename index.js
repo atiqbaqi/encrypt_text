@@ -18,7 +18,7 @@ function encrypt(text){
     var cipher = crypto.createCipheriv(algorithm, key, iv);
     var ciphered = cipher.update(text, inputEncoding, outputEncoding);
     ciphered += cipher.final(outputEncoding);
-    var ciphertext = iv.toString(outputEncoding) + ':' + ciphered
+    //var ciphertext = iv.toString(outputEncoding) + ':' + ciphered
 
     console.log(ciphered);
     return ciphered;
